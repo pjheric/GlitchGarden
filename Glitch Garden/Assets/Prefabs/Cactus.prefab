@@ -40,7 +40,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1712558716606759262}
   - component: {fileID: 1712558716606759261}
-  - component: {fileID: 1712558716606759260}
   - component: {fileID: 1712558716606759251}
   m_Layer: 0
   m_Name: CactusBody
@@ -115,25 +114,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &1712558716606759260
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1712558716606759250}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ae655e792e32a764393795fd6422086b, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1712558716606759251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,6 +139,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6428257686845535399}
   - component: {fileID: 4066682987052276631}
+  - component: {fileID: 532301151}
+  - component: {fileID: 532301150}
   m_Layer: 0
   m_Name: Cactus
   m_TagString: Untagged
@@ -194,3 +176,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   starCost: 100
+--- !u!95 &532301151
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5327739091984028755}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ae655e792e32a764393795fd6422086b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &532301150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5327739091984028755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5ecf0a68d94d4c45ab3ae2d876f2c86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 484526468452430363, guid: b8c9e797f5df26c44aea43b2694ee595,
+    type: 3}
+  gun: {fileID: 1712558715620644619}
